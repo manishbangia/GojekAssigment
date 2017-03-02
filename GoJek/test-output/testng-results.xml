@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[DELis entered in departure city]]>
+    </line>
+    <line>
+      <![CDATA[DEDis entered in return city]]>
+    </line>
+    <line>
+      <![CDATA[CCTab is displayed]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="38804" started-at="2017-03-02T14:09:20Z" finished-at="2017-03-02T14:09:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="38804" started-at="2017-03-02T14:09:20Z" finished-at="2017-03-02T14:09:59Z">
+      <class name="com.gojek.test.roundTripBooking">
+        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:com.gojek.test.roundTripBooking@6cc4c815]" name="initializeTestBaseSetup" is-config="true" duration-ms="9356" started-at="2017-03-02T19:39:20Z" finished-at="2017-03-02T19:39:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.gojek.test.roundTripBooking@6cc4c815]" name="setUp" is-config="true" duration-ms="4" started-at="2017-03-02T19:39:30Z" finished-at="2017-03-02T19:39:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="bookFlight()[pri:0, instance:com.gojek.test.roundTripBooking@6cc4c815]" name="bookFlight" duration-ms="29283" started-at="2017-03-02T19:39:30Z" finished-at="2017-03-02T19:39:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[DELis entered in departure city]]>
+            </line>
+            <line>
+              <![CDATA[DEDis entered in return city]]>
+            </line>
+            <line>
+              <![CDATA[CCTab is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- bookFlight -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.gojek.test.roundTripBooking@6cc4c815]" name="tearDown" is-config="true" duration-ms="131" started-at="2017-03-02T19:39:59Z" finished-at="2017-03-02T19:39:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.gojek.test.roundTripBooking -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

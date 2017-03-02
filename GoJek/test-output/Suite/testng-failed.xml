@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="password" value="testpassword"/>
+  <parameter name="browser" value="Firefox"/>
+  <parameter name="appURL" value="http://www.cleartrip.com"/>
+  <test name="Testing Parameterization">
+    <parameter name="password" value="testpassword"/>
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="appURL" value="http://www.cleartrip.com"/>
+    <classes>
+      <class name="com.gojek.test.roundTripBooking"/>
+      <class name="com.gojek.test.oneWayBooking"/>
+    </classes>
+  </test> <!-- Testing Parameterization -->
+  <test name="Testing Parameterization(failed)">
+    <parameter name="password" value="testpassword"/>
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="appURL" value="http://www.cleartrip.com"/>
+    <classes>
+      <class name="com.gojek.test.roundTripBooking">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="setUp"/>
+          <include name="bookFlight"/>
+        </methods>
+      </class> <!-- com.gojek.test.roundTripBooking -->
+      <class name="com.gojek.test.oneWayBooking">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="bookFlight1"/>
+        </methods>
+      </class> <!-- com.gojek.test.oneWayBooking -->
+    </classes>
+  </test> <!-- Testing Parameterization(failed) -->
+</suite> <!-- Failed suite [Suite] -->
